@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="CANVS.io Re-Design
+
+As the goal of this week was to produce working static web pages based off the designs of last week, as a group we needed to decide if we were happy with our designs and ready to p">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Static Page Creation">
+<meta property="og:url" content="http://jameseluke.github.io/2017/03/29/Static-Page-Creation/index.html">
+<meta property="og:site_name" content="James Luke">
+<meta property="og:description" content="CANVS.io Re-Design
+
+As the goal of this week was to produce working static web pages based off the designs of last week, as a group we needed to decide if we were happy with our designs and ready to p">
+<meta property="og:image" content="http://jameseluke.github.io/./landing.png">
+<meta property="og:image" content="http://jameseluke.github.io/./canvases.png">
+<meta property="og:image" content="http://jameseluke.github.io/./projects.png">
+<meta property="og:updated_time" content="2017-03-28T23:40:44.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Static Page Creation">
+<meta name="twitter:description" content="CANVS.io Re-Design
+
+As the goal of this week was to produce working static web pages based off the designs of last week, as a group we needed to decide if we were happy with our designs and ready to p">
+<meta name="twitter:image" content="http://jameseluke.github.io/./landing.png">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Static Page Creation</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+    <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+    <!-- jquery -->
+    <script src="/lib/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/resume/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/jameseluke">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2017/03/22/Prototyping/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&text=Static Page Creation"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&title=Static Page Creation"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&is_video=false&description=Static Page Creation"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Static Page Creation&body=Check out this article: http://jameseluke.github.io/2017/03/29/Static-Page-Creation/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&title=Static Page Creation"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&title=Static Page Creation"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&title=Static Page Creation"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&title=Static Page Creation"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&name=Static Page Creation&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">CANVS.io Re-Design</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">Landing Page</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">Spaces Page</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">4.</span> <span class="toc-text">Project Page</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Static Page Creation
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">James Luke</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2017-03-28T23:32:01.000Z" itemprop="datePublished">2017-03-29</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Design/">Design</a>, <a class="tag-link" href="/tags/University/">University</a>, <a class="tag-link" href="/tags/Web/">Web</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h3 align="center">CANVS.io Re-Design</h3>
+
+<p>As the goal of this week was to produce working static web pages based off the designs of last week, as a group we needed to decide if we were happy with our designs and ready to proceed with implementing them. Upon meeting and discussing them, while we were happy with the core ideas presented in last week’s designs, we were not happy completely with their final outcome and wanted to simplify them to be more in line with the simplistic and clean design scheme we were aiming for.</p>
+<p>Our moodboard decision remained the same, wanting to have a relatively neutral and simple colour scheme for the website, with the submitted art designs providing the much needed colour to the website.</p>
+<h3 align="center">Landing Page</h3>
+
+<p>Reviewing our landing page, the core concept of having a navigation bar, logo and slideshow of completed works were all ideas we wanted to keep. We decided to implement these further down the page where the user has to scroll down for further information – allowing it to come into view, including a new about us section detailing what CANVS.io does. What we decided to change was to include an extremely simple and stylistic view of our website upon landing, giving a simple choice for artists or businesses to get immediately started.</p>
+<p><a href="http://s.codepen.io/JLuke/debug/qrxJvo/PBrNWxqWWxGA#" target="_blank" rel="external"> Link to Landing Page </a></p>
+<p><img src="./landing.png" alt=""></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#hero</span> &#123;</div><div class="line">  <span class="attribute">height</span>: <span class="number">96vh</span>;</div><div class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>( rgba(0, 0, 0, 0.2), <span class="built_in">rgba</span>(0, 0, 0, 0.4) ), <span class="built_in">url</span>(<span class="string">"https://s-media-cache-ak0.pinimg.com/originals/32/d7/70/32d770c86fbcf9389c20d350a940dce0.jpg"</span>) no-repeat center center fixed;</div><div class="line"> <span class="attribute">background-repeat</span>: no-repeat;</div><div class="line">    <span class="attribute">-webkit-background-size</span>: cover;</div><div class="line">  <span class="attribute">-moz-background-size</span>: cover;</div><div class="line">  <span class="attribute">-o-background-size</span>: cover;</div><div class="line">  <span class="attribute">background-size</span>: cover;</div><div class="line">  <span class="attribute">display</span>: flex;</div><div class="line">  <span class="attribute">align-items</span>: center;</div><div class="line">  <span class="attribute">justify-content</span>: center;</div><div class="line">  <span class="attribute">flex-wrap</span>: wrap;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 align="center">Spaces Page</h3>
+
+<p>Similarly our spaces page underwent a redesign to employ an overall much cleaner look. Again, the core concept of a Google Maps map showcasing where blank canvases were available, and a listing of currently available jobs with a filter bar for more specific searching were features we wanted to keep.  However, rather than displaying our jobs in static horizontal boxes, we decided to implement a more vertical Pintrest styled listing for jobs. Different jobs would be sized to appropriate boxes and available for viewing in a never-ending list with important details immediately viewable for users to be able to scroll quickly through a page and absorb all of the content.</p>
+<p><a href="http://s.codepen.io/JLuke/debug/ZeoyGO/vWARwnPwNbnk" target="_blank" rel="external"> Link to Spaces Page </a></p>
+<p><img src="./canvases.png" alt=""></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row grid"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-4 col-sm-6 col-xs-12 space"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"inner"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://hdimagesnew.com/wp-content/uploads/2016/09/image-not-found.png"</span> <span class="attr">class</span>=<span class="string">"img-fluid"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">b</span> <span class="attr">class</span>=<span class="string">"title"</span>&gt;</span>Hipster cafe in need of colourful work to entice customers<span class="tag">&lt;/<span class="name">b</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"owner"</span>&gt;</span>by Kettle Black<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"description"</span>&gt;</span> Actually irony put a bird on it yr fashion axe. Vegan fashion axe twee pariatur roof party ramps.  <span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-4 col-sm-6 col-xs-12 space"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"inner"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://hdimagesnew.com/wp-content/uploads/2016/09/image-not-found.png"</span> <span class="attr">class</span>=<span class="string">"img-fluid"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">b</span> <span class="attr">class</span>=<span class="string">"title"</span>&gt;</span>Hipster cafe in need of colourful work to entice customers<span class="tag">&lt;/<span class="name">b</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"owner"</span>&gt;</span>by Kettle Black<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"description"</span>&gt;</span> Actually irony put a bird on it yr fashion axe. Vegan fashion axe twee pariatur roof party ramps.  <span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 align="center">Project Page</h3>
+
+<p>Finally our projects page underwent a similar redesign, once again keeping core concepts including: a title, description, and submitted ideas on a space. However, removing horizontality from our design and choosing to show information vertically scrolling down the page was a decision made to maintain the user experience across all pages of our site.</p>
+<p><a href="">Link to Project Page </a><br><img src="./projects.png" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/resume/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/jameseluke">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">CANVS.io Re-Design</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">Landing Page</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">Spaces Page</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">4.</span> <span class="toc-text">Project Page</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&text=Static Page Creation"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&title=Static Page Creation"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&is_video=false&description=Static Page Creation"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Static Page Creation&body=Check out this article: http://jameseluke.github.io/2017/03/29/Static-Page-Creation/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&title=Static Page Creation"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&title=Static Page Creation"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&title=Static Page Creation"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&title=Static Page Creation"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://jameseluke.github.io/2017/03/29/Static-Page-Creation/&name=Static Page Creation&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick='$("#toc-footer").toggle();return false;'><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick='$("#share-footer").toggle();return false;'><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick='$("#nav-footer").toggle();return false;'><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2017 James Luke
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/resume/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/jameseluke">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    <script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-86660611-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
